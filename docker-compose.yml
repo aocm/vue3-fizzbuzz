@@ -1,0 +1,11 @@
+version: '3'
+services:
+
+  app:
+    build: .
+    container_name: vue3-fizzbuzz
+    tty: true # コンテナの起動永続化
+    volumes:
+      - .:/usr/src/app
+
+# ポートはVSCodeRemoteContainerの拡張で確保するため定義しない

@@ -1,0 +1,11 @@
+{
+    "name": "Vue3 FizzBuzz",
+    "dockerComposeFile": [
+        "../docker-compose.yml"
+    ],
+    "service": "app",
+    "workspaceFolder": "/usr/src/app",
+    "extensions": [
+        "octref.vetur",
+    ]
+}
