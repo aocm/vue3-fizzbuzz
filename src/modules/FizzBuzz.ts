@@ -1,8 +1,9 @@
 
 class fizzbuzz {
   constructor() { }
+
   static convert(num: number){
-    return '1'
+    return String(num)
   }
 }
 
