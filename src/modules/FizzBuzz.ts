@@ -1,21 +1,21 @@
 
 class fizzbuzz {
-  constructor() { }
+  constructor () { }
 
-  static convert(num: number): string{
+  static convert (num: number): string {
     if (num % 15 === 0) {
-      return "FizzBuzz";
+      return 'FizzBuzz'
     }
     if (num % 3 === 0) {
-      return "Fizz";
+      return 'Fizz'
     }
     if (num % 5 === 0) {
-      return "Buzz";
+      return 'Buzz'
     }
-    return String(num);
+    return String(num)
   }
 
-  static judge(index: number, input: string): boolean{
+  static judge (index: number, input: string): boolean {
     return this.convert(index) === input
   }
 }
