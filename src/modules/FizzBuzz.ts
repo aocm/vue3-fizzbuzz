@@ -15,6 +15,9 @@ class fizzbuzz {
     return String(num);
   }
 
+  static judge(index: number, input: string){
+    return true
+  }
 }
 
 export default fizzbuzz

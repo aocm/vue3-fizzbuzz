@@ -1,4 +1,5 @@
 import fizzbuzz from '@/modules/FizzBuzz';
+import { Static } from '@vue/runtime-core';
 
 describe('Fizz Buzz 数列と変換規則を扱うfizzbuzzクラス', () => {
   beforeEach( () => {
@@ -24,7 +25,8 @@ describe('Fizz Buzz 数列と変換規則を扱うfizzbuzzクラス', () => {
       test('15を渡すと文字列"FizzBuzz"を返す', () => {
         // 実行 & 検証
         expect(fizzbuzz.convert(15)).toBe("FizzBuzz");
-      });
+      })
+
     })
 
     describe('そのほかの数にの時はそのまま出力する', () => {
@@ -32,6 +34,13 @@ describe('Fizz Buzz 数列と変換規則を扱うfizzbuzzクラス', () => {
         // 実行 & 検証
         expect(fizzbuzz.convert(1)).toBe("1");
       });
+      
+      test('正しければtrueを返す', () => {
+        expect(fizzbuzz.judge(1, "1")).toBe(true);
+      })
+      test('不正解であればfalseを返す', () => {
+        expect(fizzbuzz.judge(1, "2")).toBe(false);
+      })
     })
   })
 })
