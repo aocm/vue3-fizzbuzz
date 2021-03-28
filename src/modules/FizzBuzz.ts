@@ -15,8 +15,8 @@ class fizzbuzz {
     return String(num);
   }
 
-  static judge(index: number, input: string){
-    return true
+  static judge(index: number, input: string): boolean{
+    return this.convert(index) === input
   }
 }
 
