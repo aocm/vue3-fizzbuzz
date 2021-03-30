@@ -15,3 +15,5 @@ Vue CLI v4.5.12
 ? Save this as a preset for future projects? No
 ? Pick the package manager to use when installing dependencies: Yarn
 ```
+
+※3/30にyarnからnpmに変更
