@@ -1,18 +1,24 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-  </div>
+  <section class="hero is-fullheight">
+    <div class="hero-body ">
+      <FizzBuzz />
+    </div>
+  </section>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import HelloWorld from '@/components/HelloWorld.vue' // @ is an alias to /src
+import FizzBuzz from '@/components/FizzBuzz.vue'
 
 export default defineComponent({
   name: 'Home',
   components: {
-    HelloWorld
+    FizzBuzz
   }
 })
 </script>
+<style scoped>
+.hero-body {
+  justify-content: center;
+}
+</style>
