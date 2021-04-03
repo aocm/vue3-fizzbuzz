@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <h1>FizzBuzz</h1>
+    <custom-title title="FizzBuzz" />
     <p>
       ルール・・・・
     </p>
@@ -26,8 +26,12 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import CustomTitle from './Title.vue'
 
 export default defineComponent({
-  name: 'FizzBuzz'
+  name: 'FizzBuzz',
+  components: {
+    CustomTitle
+  }
 })
 </script>
