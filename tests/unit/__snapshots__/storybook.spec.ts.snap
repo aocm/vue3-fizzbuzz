@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Component/FizzBuzz Default 1`] = `
+<div
+  class="content"
+>
+  <h1>
+    FizzBuzz
+  </h1>
+  <p>
+     ルール・・・・ 
+  </p>
+  <div
+    class="columns"
+  >
+    <div
+      class="column"
+    >
+      <div
+        class="field has-addons"
+      >
+        <div
+          class="control"
+        >
+          <input
+            class="input"
+            placeholder="入力"
+            type="text"
+          />
+        </div>
+        <div
+          class="control"
+        >
+          <a
+            class="button is-info"
+          >
+             check 
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="column"
+    >
+       〇 正解です 
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Component/Title Default 1`] = `
+<h1>
+  sample title
+</h1>
+`;
