@@ -1,5 +1,40 @@
 # vue3-fizzbuzz
 
+## 環境構築（Dockerコンテナ利用）
+1. Dockerが利用できる状態にしてください。
+1. VSCodeをインストールしてください。（なるべく最新版で。記載時点は1.55）
+1. VSCodeの拡張機能「ms-vscode-remote.remote-containers」（Remote Containers）をいれてください。
+1. Remote ContainersのOpen Folder in Containersを実行して、このリポジトリをCloneしたディレクトリを選択してください。
+    - コンテナ内で
+1. コンテナ内で`npm install` を実行します。
+1. `npm run serve` で起動を確認します。
+
+### 補足
+- Veturという拡張機能をコンテナ内に取り入れていますが、それについては`vue3-fizzbuzz\.devcontainer\devcontainer.json`に記載しています。このファイルにRemote Containersの設定が書かれています。
+- ホストのポート開放をVSCodeのRemote Containersに任せているため、yml等に明示的に記載していません。
+- yarn でも問題ありませんが今回はnpmでやっています。※npxコマンドをしたため
+
+## 起動方法
+### 画面の起動
+1. Cloneしたディレクトリに移動する
+1. (初回、もしくはpackage.jsonに変更があった場合) `npm install`
+1. npm run serve
+
+### Storybookの起動
+1. Cloneしたディレクトリに移動する
+1. (初回、もしくはpackage.jsonに変更があった場合) `npm install`
+1. npm run storybook
+
+
+### テストの実行
+- 単体テスト `npm run test:unit`
+- 単体テスト（モジュールのみ） `npm run test:util`
+
+## CI/CD
+未検討
+
+---
+
 ## 要件
 > 最初のプレイヤーは「1」と数字を発言する。次のプレイヤーは直前のプレイヤーの次の数字に1を足した数字を発言していく。ただし、3で割り切れる場合は「Fizz」（Bizz Buzzの場合は「Bizz」）、5で割り切れる場合は「Buzz」、両者で割り切れる場合（すなわち15で割り切れる場合）は「Fizz Buzz」（Bizz Buzzの場合は「Bizz Buzz」）を数の代わりに発言しなければならない。発言を間違えた者や、ためらった者は脱落となる。
 
