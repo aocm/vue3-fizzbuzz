@@ -1,7 +1,5 @@
 
 class fizzbuzz {
-  constructor () { }
-
   static convert (num: number): string {
     if (num % 15 === 0) {
       return 'FizzBuzz'

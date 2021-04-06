@@ -1,11 +1,14 @@
 import { InjectionKey } from 'vue'
 import { createStore, useStore as baseUseStore, Store, MutationTree, ActionTree, GetterTree } from 'vuex'
-
+// TODO削除
+// eslint-disable-next-line
 export interface State {
   // ここに型を定義する
   // SampleList: SampleItem[];
 }
 
+// TODO削除
+// eslint-disable-next-line
 export const key: InjectionKey<Store<State>> = Symbol()
 const state: State = {
   // ここにデフォルトの値を用意しておく。型に沿うように空配列を入れるなど
