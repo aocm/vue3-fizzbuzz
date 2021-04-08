@@ -1,5 +1,7 @@
 import { InjectionKey } from 'vue'
 import { createStore, useStore as baseUseStore, Store, MutationTree, ActionTree, GetterTree } from 'vuex'
+import createPersistedState from 'vuex-persistedstate'
+
 // TODO削除
 // eslint-disable-next-line
 export interface State {
@@ -48,8 +50,9 @@ export default createStore({
   mutations,
   getters,
   modules: {
-    // パッケージを利用sるう場合は
-  }
+    // 別ファイルがある場合こちらに
+  },
+  plugins: [createPersistedState()]
 })
 
 // our own `useStore` composition function for types
