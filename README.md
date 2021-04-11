@@ -29,6 +29,9 @@
 ### テストの実行
 - 単体テスト `npm run test:unit`
 - 単体テスト（モジュールのみ） `npm run test:util`
+- 結合テスト 
+    1. 開発コンテナで`npm run build`を実行し、distディレクトリを作成する。
+    1. ビルド結果をもとに、次のコマンドを実行するとNGINX＋Cypressを起動する。`docker-compose  -f integration-docker-compose.yml up `
 
 ## CI/CD
 未検討
